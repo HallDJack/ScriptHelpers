@@ -10,11 +10,12 @@ Gem::Specification.new do |s|
   s.license       = "MIT"
 
   s.require_paths = ['lib']
-  gem.files       = %w(CHANGELOG.md CONTRIBUTING.md LICENSE README.md Rakefile script_helpers.gemspec)
-  gem.files      += Dir['lib/**/*.rb']
-  gem.files      += Dir['spec/**/*.rb']
-  gem.test_files  = Dir['spec/**/*.rb']
+  s.files       = %w(LICENSE README.md script_helpers.gemspec)
+  # s.files       = %w(CHANGELOG.md CONTRIBUTING.md LICENSE README.md Rakefile script_helpers.gemspec)
+  s.files      += Dir['lib/**/*.rb']
+  s.files      += Dir['spec/**/*.rb']
+  s.test_files  = Dir['spec/**/*.rb']
 
-  gem.add_development_dependency 'rake'
-  gem.add_development_dependency 'rspec', '~> 3.0'
+  s.add_development_dependency 'rake'
+  s.add_development_dependency 'rspec', '~> 3.0'
 end
