@@ -16,6 +16,8 @@ Gem::Specification.new do |s|
   s.files      += Dir['spec/**/*.rb']
   s.test_files  = Dir['spec/**/*.rb']
 
-  s.add_development_dependency 'rake'
+  s.add_development_dependency 'bundler', '~> 1.11.2'
+  s.add_development_dependency 'rake', '~> 10.4.2'
   s.add_development_dependency 'rspec', '~> 3.0'
+  s.add_development_dependency 'timecop', '~> 0.8.0'
 end
